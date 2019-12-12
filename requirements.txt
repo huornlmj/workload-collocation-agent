@@ -1,28 +1,16 @@
-[[source]]
-url = "https://pypi.python.org/simple"
-verify_ssl = true
-name = "pypi"
+requests==2.22.0
+ruamel.yaml==0.16.5
+colorlog==4.0.2
+logging-tree==1.8
+dataclasses==0.6
+kazoo==2.6.1
 
-[packages]
-requests = "==2.22.0"                 # 2019.05.16
-"ruamel.yaml" = "==0.16.5"            # 2019.09.18
-colorlog = "==4.0.2"                  # 2018.12.14
-logging-tree = "==1.8"                # 2018.08.05
-dataclasses = "==0.6"                 # 2018.05.18
-kazoo = "==2.6.1"                     # 2019.01.22
+#development packages
+pex==1.6.11
+pytest==5.1.2
+pytest-cov==2.7.1
+flake8==3.7.8
+setuptools_scm==3.3.3
+bandit==1.6.2
 
-[dev-packages]
-pex = "==1.6.11"                      # 2019.09.18
-pytest = "==5.1.2"                    # 2019.09.18
-pytest-cov = "==2.7.1"                # 2019.05.03
-flake8 = "==3.7.8"                    # 2019.09.18
-setuptools_scm = "==3.3.3"            # 2019.01.16
-bandit = "==1.6.2"	              # 2019.09.18
-
-[requires]
-python_version = "3.6"
-platform_python_implementation = "CPython"
-
-# --- Note ---
-# Additional optional requirement is confluent_kafka == 1.2.0
-#	defined in Dockerfile.kafka
+confluent_kafka==1.2.0 
